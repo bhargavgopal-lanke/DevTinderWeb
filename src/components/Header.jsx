@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import logo from "../images/logo.jpg";
 
 const Header = () => {
   return (
     <div>
-      Header
+      <header>
+        <label>DevTinder</label>
+        <img src={logo} alt="logo" />
+      </header>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
