@@ -20,3 +20,13 @@ header img {
   width: 60px;
   border-radius: 25px;
 }
+
+.footer {
+  padding: 20px;
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
