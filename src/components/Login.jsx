@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Login = () => {
 
-  const handleUsernameChange = () => {};
-  const handlePwdChange = () => {};
+  const [emailId, setEmailId] = useState("")
+  const [password, setPassword] = useState("")
+
+  const handleUsernameChange = (e) => {
+    setEmailId(e?.target?.value)
+  };
+  const handlePwdChange = (e) => {
+    setPassword(e?.target?.value);
+  };
 
   return (
     <div>
@@ -19,7 +26,7 @@ const Login = () => {
                 type="text"
                 name="username"
                 className="form-control"
-                value={""}
+                value={emailId}
                 onChange={handleUsernameChange}
               />
             </div>
@@ -29,7 +36,7 @@ const Login = () => {
                 type="text"
                 name="password"
                 className="form-control"
-                value={""}
+                value={password}
                 onChange={handlePwdChange}
               />
             </div>
